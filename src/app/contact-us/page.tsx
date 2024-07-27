@@ -14,16 +14,16 @@ export default function ContactUs() {
     <main className="bg-[var(--bg-primary)]">
       <Banner />
       <Navbar />
-      <section className="my-16 max-w-screen-lg mx-auto">
-        <div className="flex justify-between items-center">
-          <div className="w-2/5">
+      <section className="my-16 max-w-screen-lg mx-4 md:mx-auto">
+        <div className="md:flex justify-between items-center">
+          <div className="md:w-2/5 max-md:mb-10">
             <p className="text-xs font-semibold text-[var(--bg-green)] mb-4">
               APPOINTMENT
             </p>
             <h2 className="font-semibold text-4xl mb-8">
               Get in touch to book your first appointment
             </h2>
-            <p className="font-normal text-base mr-10 mb-10">
+            <p className="font-normal text-base mr-10 mb-6 md:mb-10">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia.
             </p>
@@ -38,7 +38,7 @@ export default function ContactUs() {
           </div>
           <form
             onSubmit={handleSubmit}
-            className="bg-white rounded-[20px] px-8 py-7 w-1/2 space-y-4"
+            className="bg-white rounded-[20px] px-8 py-7 md:w-1/2 space-y-4"
           >
             <input
               type="text"

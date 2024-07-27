@@ -31,12 +31,19 @@ export default function Navbar() {
     >
       <div className="relative w-full">
         <div className="flex justify-between mx-7 items-center">
-          <div className="text-xl font-semibold inline-flex gap-x-[10px]">
-            <Image src={Logo} alt="logo" /> Osuntuyi Medical
-          </div>
+          <Link href="/">
+            {" "}
+            <div className="text-xl font-semibold inline-flex gap-x-[10px]">
+              <Image src={Logo} alt="logo" /> Osuntuyi Medical
+            </div>
+          </Link>
           <ul className="hidden md:flex font-medium">
-            <li className="px-3">Home</li>
-            <li className="px-3">About</li>
+            <Link href="/">
+              <li className="px-3">Home</li>
+            </Link>
+            <Link href="#">
+              <li className="px-3">About</li>
+            </Link>
             <Link href="/contact-us" className="px-3">
               Contact Us
             </Link>
@@ -57,10 +64,16 @@ export default function Navbar() {
           }`}
         >
           <ul className="font-medium mb-3">
-            <li className="px-3 py-4 rounded-[10px] hover:bg-green-50">Home</li>
-            <li className="px-3 py-4 rounded-[10px] hover:bg-green-50">
-              About
-            </li>
+            <Link href="/">
+              <li className="px-3 py-4 rounded-[10px] hover:bg-green-50">
+                Home
+              </li>
+            </Link>
+            <Link href="#">
+              <li className="px-3 py-4 rounded-[10px] hover:bg-green-50">
+                About
+              </li>
+            </Link>
             <Link href="/contact-us">
               <li className="px-3 py-4 rounded-[10px] hover:bg-green-50">
                 Contact Us
