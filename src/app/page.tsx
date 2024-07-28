@@ -244,7 +244,7 @@ export default function Home() {
               {womenlist?.map((item) => (
                 <div
                   key={item}
-                  className="font-medium text-xl flex item-center gap-x-4"
+                  className="font-medium text-lg flex item-center gap-x-4"
                 >
                   <Image src={Check} alt={item} />
                   {item}

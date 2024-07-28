@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Logo } from "../../public/assets/icons";
 import Link from "next/link";
+import { HiMenuAlt3 } from "react-icons/hi"; import { LiaTimesSolid } from "react-icons/lia";
 
 const shouldScroll = "top-[10px]";
 const notScroll = "top-[68px]";
@@ -55,7 +56,11 @@ export default function Navbar() {
             className="block md:hidden"
             onClick={() => setOpenMenu((prev) => !prev)}
           >
-            Menu
+            {openMenu ? (
+              <LiaTimesSolid className="size-7" />
+            ) : (
+              <HiMenuAlt3 className="size-7" />
+            )}
           </div>
         </div>
         <div
